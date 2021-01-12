@@ -4,12 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Person {
-    IAir air;
+    public IAir air;
 
-    @Autowired
-    public Person(@Qualifier("dirtyAir") IAir air){
+    //@Autowired
+    public Person(IAir air){
         this.air=air;
     }
 
