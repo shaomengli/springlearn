@@ -29,11 +29,12 @@ public class GuDianGaiLv {
     }
 
     public static double divisibleProbability(Long beginNum,Long endNum,Long[] divisibleNum){
+        //1-pa-pb+pab=1-(pa+pb-pab)
         ResultDivisible pa=divisibleProbability(beginNum,endNum,divisibleNum[0]);
         ResultDivisible pb=divisibleProbability(beginNum,endNum,divisibleNum[1]);
         ResultDivisible pTemp=Utils.addResultDivisible(pa,pb);
-        ResultDivisible pTemp2=Utils.mulResultDivisible(pa,pb);
-        pTemp2=Utils.subtractionResultDivisible(pTemp,pTemp2);
-        return 1-pTemp2.getValue();
+        //获取最小公倍数的算法
+        ResultDivisible pTemp2=divisibleProbability(beginNum,endNum,Utils.leastCommonMultiple(divisibleNum[0],divisibleNum[1]));
+        return 1-pTemp.getValue()+pTemp2.getValue();
     }
 }
