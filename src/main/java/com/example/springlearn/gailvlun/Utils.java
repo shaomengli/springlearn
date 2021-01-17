@@ -1,6 +1,14 @@
 package com.example.springlearn.gailvlun;
 
 public class Utils {
+    /*
+     * @description:
+     * @return
+     * @author      邵梦丽
+     * @date        2021/1/17 15:16
+     **/
+
+
     public static ResultDivisible subtractionResultDivisible(ResultDivisible pa,ResultDivisible pb){
         return new ResultDivisible(pa.getNum()*pb.getNum(),pa.getCount()*pb.getNum()-pb.getCount()*pa.getNum());
     }
