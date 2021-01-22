@@ -17,9 +17,9 @@ public class GuDianGaiLv {
         }
         return totalConditionNum/(spaceNum*spaceNum);
     }
-    public static void main(String[] args){
-        System.out.println(divisibleProbability(1l,2000l,new Long[]{6l,8l}));
-    }
+//    public static void main(String[] args){
+//        System.out.println(divisibleProbability(1l,2000l,new Long[]{6l,8l}));
+//    }
 
     //在1~2000的整数中随机地取一个数，问取到的整数即不能为6整除，又不能被8整除的概率是多少？
     public static ResultDivisible divisibleProbability(Long beginNum, Long endNum, Long divisibleNum){

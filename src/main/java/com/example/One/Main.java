@@ -1,7 +1,5 @@
 package com.example.One;
 
-import com.sun.javaws.IconUtil;
-
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -67,10 +65,10 @@ public class Main {
         field=clazz.getField("Name");
         System.out.println(field.getName());
     }
-    public static void main(String[] agrs) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchFieldException {
-        //testConstructor();
-        testAnnotatioin();
-    }
+//    public static void main(String[] agrs) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchFieldException {
+//        //testConstructor();
+//        testAnnotatioin();
+//    }
     public static void testAnnotatioin() throws ClassNotFoundException {
         String className="com.example.One.Student";
         Class<Student> clazz=(Class<Student>) Class.forName(className);

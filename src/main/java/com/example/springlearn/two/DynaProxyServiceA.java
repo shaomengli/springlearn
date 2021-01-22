@@ -24,8 +24,8 @@ public class DynaProxyServiceA implements InvocationHandler {
         System.out.println("log end");
         return result;
     }
-    public static void main(String[] args)throws Exception{
-        IService service= (IService) new DynaProxyServiceA().bind(new ServiceImplA());
-        service.service("CYW");
-    }
+//    public static void main(String[] args)throws Exception{
+//        IService service= (IService) new DynaProxyServiceA().bind(new ServiceImplA());
+//        service.service("CYW");
+//    }
 }

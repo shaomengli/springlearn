@@ -28,10 +28,10 @@ public class UserBean implements BeanNameAware, BeanFactoryAware, InitializingBe
         System.out.println("DisposableBean");
     }
 
-    public static void main(String[] args) throws Exception {
-        ClassPathXmlApplicationContext context= new ClassPathXmlApplicationContext(new String[]{"applicationContext.xml"});
-        BeanFactory factory=context;
-        UserBean user=(UserBean)factory.getBean("user");
-        user.destroy();
-    }
+//    public static void main(String[] args) throws Exception {
+//        ClassPathXmlApplicationContext context= new ClassPathXmlApplicationContext(new String[]{"applicationContext.xml"});
+//        BeanFactory factory=context;
+//        UserBean user=(UserBean)factory.getBean("user");
+//        user.destroy();
+//    }
 }
